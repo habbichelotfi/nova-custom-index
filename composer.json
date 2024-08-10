@@ -1,0 +1,36 @@
+{
+    "name": "habbichelotfi/nova-custom-index",
+    "description": "A tool for easier overwriting custom-header and toolbars in Laravel Nova",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lotfi Habbiche",
+            "email": "lotfihabbiche@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/nova": "^4.32.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "LotfiHabbiche\\NovaDynamicViews\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LotfiHabbiche\\NovaDynamicViews\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
